@@ -21,7 +21,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#">MagicNotes</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" id="hamburger"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -42,9 +42,17 @@
         <h1>Welcome to Magic Notes</h1>
         <div class="card">
             <div class="card-body">
+
+              <div class="mb-3">      <!-- Adding the title bar-->
+                <h5>Add Title</h5>
+                <input type="text" class="form-control" id="addTitle">
+              </div>
+
+
+
               <h5 class="card-title">Add a Note</h5>
               <div class="form-floating">
-                <textarea class="form-control" id="addTxt" style="height: 100px"></textarea>
+                <textarea class="form-control p-2" id="addTxt" style="height: 100px"></textarea>
                 <label for="floatingTextarea2"></label>
               </div>
               <button class="btn btn-primary my-2" id="addBtn">Add Note</button>
