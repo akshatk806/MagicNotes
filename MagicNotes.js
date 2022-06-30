@@ -41,7 +41,7 @@ function showNotes(){
     notesObj.forEach(function(element,index){
         html+=`<div class="noteCard card m-2" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">${element.title}}</h5>
+                    <h5 class="card-title">${element.title}</h5>
                     <p class="card-text">${element.text}</p>
                     <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
                     </div>
